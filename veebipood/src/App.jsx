@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Link to="/">
-      <img className="pilt" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzWnTTGFoCTPV4Qk7zUIDMeEIZa6ejPo8_Wg&s" alt="" />
+        <img className="pilt" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzWnTTGFoCTPV4Qk7zUIDMeEIZa6ejPo8_Wg&s" alt="" />
       </Link>
 
       <Link to="/ostukorv">
