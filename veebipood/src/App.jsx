@@ -1,5 +1,5 @@
 import './App.css'
-import {Link, Route, Routes} from "react-router-dom"
+import {Route, Routes} from "react-router-dom"
 import Avaleht from './pages/Avaleht'
 import Ostukorv from './pages/Ostukorv'
 import LisaToode from './pages/LisaToode'
@@ -8,38 +8,13 @@ import Seaded from './pages/Seaded'
 import Esindused from './pages/Esindused'
 import Kalkulaator from './pages/Kalkulaator'
 import NotFound from './pages/NotFound'
+import Menu from './components/Menu'
 
 function App() {
 
   return (
     <>
-      <Link to="/">
-        <img className="pilt" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzWnTTGFoCTPV4Qk7zUIDMeEIZa6ejPo8_Wg&s" alt="" />
-      </Link>
-
-      <Link to="/ostukorv">
-        <button>Ostukorvi</button>
-      </Link>
-
-      <Link to="/lisa-toode">
-        <button>Toodet lisama</button>
-      </Link>
-
-      <Link to="/osta-kinkekaart">
-        <button>Kinkekaardid</button>
-      </Link>
-
-      <Link to="/seaded">
-        <button>Seaded</button>
-      </Link>
-
-      <Link to="/esindused">
-        <button>Esindused</button>
-      </Link>
-
-      <Link to="/kalkulaator">
-        <button>Kalkulaator</button>
-      </Link>
+      <Menu />
 
       <Routes>
         <Route path="/" element={ <Avaleht /> } />

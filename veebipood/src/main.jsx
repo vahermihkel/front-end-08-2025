@@ -16,3 +16,11 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </StrictMode>,
 )
+
+// 1h varus
+
+// 4x Indrekuga
+// 12.08 - Reacti algus - navigeerimine
+// 14.08 - useState
+// 19.08 - xxxx   20min
+// 21.08 - 18.30-20.10 dünaamiline CSS, alamkomponendid

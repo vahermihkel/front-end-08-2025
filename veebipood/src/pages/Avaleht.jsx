@@ -26,6 +26,12 @@ function Avaleht() {
     <div>
       {like === true && <img src={laigitud} alt="" />}
       {like === false && <img src={mittelaigitud} alt="" />}
+
+      {like  && <img src={laigitud} alt="" />}
+      {!like && <img src={mittelaigitud} alt="" />}
+
+      {like ? <img src={laigitud} alt="" /> : <img src={mittelaigitud} alt="" />}
+
       <button onClick={() => setLike(!like)}>Vaheta like-i</button>
 
       <br /><br />
@@ -34,7 +40,7 @@ function Avaleht() {
       {kogus > 0 && <button onClick={nulli}>Tagasi nulli</button>}
       <br />
       <button disabled={kogus === 0} onClick={vahenda}>-</button>
-      <span>{kogus}</span>
+      <span className={kogus >= 10 ? "kuldne": undefined}>{kogus}</span>
       <button onClick={suurenda}>+</button>
     </div>
   )
